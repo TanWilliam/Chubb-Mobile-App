@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectmobapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectMobApp">
+        <activity
+            android:name=".tambah"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".StatusClaimKecelakaan"
+            android:exported="true" />
+        <activity
+            android:name=".StatusClaimKendaraan"
+            android:exported="true" />
+        <activity
+            android:name=".StatusClaimKebakaran"
+            android:exported="true" />
+        <activity
+            android:name=".CekStatusClaim"
+            android:exported="true" />
+        <activity
+            android:name=".StatusPembayaranKecelakaan"
+            android:exported="true" />
+        <activity
+            android:name=".StatusPembayaranKendaraan"
+            android:exported="true" />
+        <activity
+            android:name=".StatusPembayaranKebakaran"
+            android:exported="true" />
+        <activity
+            android:name=".CekStatusPembayaran"
+            android:exported="true" />
+        <activity
+            android:name=".cekPolisKendaraan"
+            android:exported="true" />
+        <activity
+            android:name=".cekPolisKecelakaan"
+            android:exported="true" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".CHUBBLocationMap"
+            android:exported="true"
+            android:label="@string/title_activity_chubblocation_map" />
+        <activity
+            android:name=".FragmentBrowser2"
+            android:exported="true" />
+        <activity
+            android:name=".FragmentBrowser1"
+            android:exported="true" />
+        <activity
+            android:name=".Browser"
+            android:exported="true" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mylist"
+            android:exported="true" />
+        <activity
+            android:name=".cekPolisKebakaran"
+            android:exported="true" />
+        <activity
+            android:name=".CekPolis"
+            android:exported="true" />
+        <activity
+            android:name=".AsuransiKecelakaan"
+            android:exported="true" />
+        <activity
+            android:name=".AsuransiKendaraan"
+            android:exported="true" />
+        <activity
+            android:name=".AsuransiKebakaran"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".tampilanRegister"
+            android:exported="true" />
+        <activity
+            android:name=".tampilanHome"
+            android:exported="true"
+            android:label="Main Menu" />
+        <activity
+            android:name=".tampilanLogin"
+            android:exported="true" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
